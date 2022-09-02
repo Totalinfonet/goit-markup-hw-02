@@ -1,0 +1,68 @@
+/* 1. Logo */
+/* 2. */
+
+
+/* :root */
+
+/* Default settings turn off */
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Inherit Settings */
+
+body {
+    color: #757575;
+    background-color: #FFFFFF;
+}
+
+/* 1. Logo */
+
+.logo {
+    color: #2196F3;
+}
+.logo-header {
+    color: #000000;
+}
+.logo-footer {
+    color: #FFFFFF;
+}
+
+
+
+/* 2. Nav List */
+
+.nav-list a {
+    color: #212121;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.contacts-list a:hover,
+.contacts-list a:focus {
+    color: #2196F3;
+}
+/* Contacts List */
+
+.contacts-list a {
+    color: inherit;
+}
+
+/* Footer */
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-address {
+    color: #FFFFFF;
+    font-style: normal;
+}
+
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
