@@ -1,6 +1,21 @@
-/* 1. Logo */
-/* 2. */
+/* LIST OF COMMENTS Ctrl+F */
 
+/* Variables */
+/* Default settings turn off */
+/* Inherited Settings */
+/* Logo */
+/* Nav & Contacts List */
+/* Hero Section */
+/* Buttons */
+/* Section`s Titles */
+/* Features Section */
+/* Team Section */
+/* Portfolio Section */
+/* Footer */
+
+
+
+/* Variables */
 
 :root {
     --brand-color: #757575;
@@ -14,38 +29,41 @@
 
 /* Default settings turn off */
 
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-}
+ul {list-style: none;}
+a {text-decoration: none;}
+
 
 /* Inherited Settings */
 
 body {
     color: var(--brand-color);
     background-color: var(--white-color);
+    font-family: "Roboto", sans-serif;
 }
 
-/* 1. Logo */
+/* Logo */
 
 .logo {
     color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
-.logo-header {
-    color: var(--secondary-color);
-}
-.logo-footer {
-    color: var(--white-color);
-}
+.logo-header {color: var(--secondary-color);}
+.logo-footer {color: var(--white-color);}
 
 
+/* Nav & Contacts List */
 
-/* 2. Nav List */
-
-.nav-list a {
+.nav-list a,
+.contacts-list a {
     color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 
 .list a:hover,
@@ -53,16 +71,14 @@ body {
     color: var(--accent-color);
 }
 
-.list .active {
+.list .current {
     color: var(--accent-color);
 }
-.list .active:hover,
-.list .active:focus {
+.list .current:hover,
+.list .current:focus {
     color: var(--primary-color);
     text-decoration: underline;
 }
-/* Contacts List */
-
 .contacts-list a {
     color: inherit;
 }
@@ -72,14 +88,30 @@ body {
 .hero-section {
     background-color: var(--bg-color);
     color: var(--white-color);
-    }
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 
-    /* Buttons */
+/* Buttons */
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
 
 .hero-button {
     color: var(--white-color);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
 }
+
 .hero-button:hover,
 .hero-button:focus {
     color: var(--secondary-color);
@@ -89,19 +121,79 @@ body {
 .portfolio-button {
     color: var(--primary-color);
     background-color: var(--button-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
+
 .portfolio-button:hover,
 .portfolio-button:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
 
-/* Sections */
-.hidden-title {
-    display: none;
+/* Section`s Titles */
+
+.hidden-title {display: none;}
+
+.titles {color: var(--primary-color);}
+
+.occupation-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
 }
-.titles {
-    color: var(--primary-color);
+
+/* Features Section */
+
+.feature-section h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-section p {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em; 
+}  
+
+/* Team Section */
+
+.team-section {
+    background-color: var(--button-color);
+}
+.team-section h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.team-section p {
+font-size: 16px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+}
+
+/* Portfolio Section */
+
+.portfolio-section h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-section p {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
 
 /* Footer */
@@ -112,9 +204,15 @@ body {
 .footer-address {
     color: var(--white-color);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-    color: rgba(var(--white-color), 0.6);
+    color: rgba(var(--white-color), .6);
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
