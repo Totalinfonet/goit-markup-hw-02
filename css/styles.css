@@ -23,6 +23,7 @@
     --primary-color: #212121;
     --secondary-color: #000000;
     --white-color: #FFFFFF;
+    --white-opacity: rgba(255, 255, 255, .6);
     --bg-color: #2F303A;
     --button-color: #F5F4FA;
 }
@@ -67,7 +68,9 @@ body {
 }
 
 .list a:hover,
-.list a:focus {
+.list a:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
     color: var(--accent-color);
 }
 
@@ -210,7 +213,7 @@ letter-spacing: 0.03em;
 }
 
 .footer-contacts {
-    color: rgba(var(--white-color), .6);
+    color: var(--white-opacity);
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
