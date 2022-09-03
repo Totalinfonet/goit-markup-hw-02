@@ -2,7 +2,15 @@
 /* 2. */
 
 
-/* :root */
+:root {
+    --brand-color: #757575;
+    --accent-color: #2196F3;
+    --primary-color: #212121;
+    --secondary-color: #000000;
+    --white-color: #FFFFFF;
+    --bg-color: #2F303A;
+    --button-color: #F5F4FA;
+}
 
 /* Default settings turn off */
 
@@ -13,23 +21,23 @@ a {
     text-decoration: none;
 }
 
-/* Inherit Settings */
+/* Inherited Settings */
 
 body {
-    color: #757575;
-    background-color: #FFFFFF;
+    color: var(--brand-color);
+    background-color: var(--white-color);
 }
 
 /* 1. Logo */
 
 .logo {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .logo-header {
-    color: #000000;
+    color: var(--secondary-color);
 }
 .logo-footer {
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 
@@ -37,14 +45,21 @@ body {
 /* 2. Nav List */
 
 .nav-list a {
-    color: #212121;
+    color: var(--primary-color);
 }
 
-.nav-list a:hover,
-.nav-list a:focus,
-.contacts-list a:hover,
-.contacts-list a:focus {
-    color: #2196F3;
+.list a:hover,
+.list a:focus {
+    color: var(--accent-color);
+}
+
+.list .active {
+    color: var(--accent-color);
+}
+.list .active:hover,
+.list .active:focus {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 /* Contacts List */
 
@@ -52,17 +67,54 @@ body {
     color: inherit;
 }
 
+/* Hero Section */
+
+.hero-section {
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    }
+
+    /* Buttons */
+
+.hero-button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+}
+
+.portfolio-button {
+    color: var(--primary-color);
+    background-color: var(--button-color);
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* Sections */
+.hidden-title {
+    display: none;
+}
+.titles {
+    color: var(--primary-color);
+}
+
 /* Footer */
-.footer {
-    background-color: #2F303A;
+.footer-styles {
+    background-color: var(--bg-color);
 }
 
 .footer-address {
-    color: #FFFFFF;
+    color: var(--white-color);
     font-style: normal;
 }
 
 .footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(var(--white-color), 0.6);
     font-style: normal;
 }
