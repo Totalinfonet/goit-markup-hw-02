@@ -26,6 +26,8 @@
     --white-opacity: rgba(255, 255, 255, .6);
     --bg-color: #2F303A;
     --button-color: #F5F4FA;
+    --hero-button: #188CE8;
+
 }
 
 /* Default settings turn off */
@@ -77,11 +79,13 @@ body {
 .list .current {
     color: var(--accent-color);
 }
-.list .current:hover,
+
+/* Mentor`s notes - FIXED */
+/* .list .current:hover,
 .list .current:focus {
     color: var(--primary-color);
     text-decoration: underline;
-}
+} */
 .contacts-list a {
     color: inherit;
 }
@@ -91,10 +95,20 @@ body {
 .hero-section {
     background-color: var(--bg-color);
     color: var(--white-color);
-    font-weight: 900;
+
+    /* Mentor`s notes - FIXED */
+    /* font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; */
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -117,8 +131,8 @@ button {
 
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--secondary-color);
-    background-color: var(--white-color);
+    /* color: var(--secondary-color); */
+    background-color: var(--hero-button);
 }
 
 .portfolio-button {
@@ -152,7 +166,7 @@ button {
 
 /* Features Section */
 
-.feature-section h3 {
+.feature-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -160,7 +174,7 @@ button {
     text-transform: uppercase;
 }
 
-.feature-section p {
+.feature-text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
@@ -171,14 +185,14 @@ button {
 .team-section {
     background-color: var(--button-color);
 }
-.team-section h3 {
+.team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
-.team-section p {
+.team-function {
 font-size: 16px;
 line-height: 1.2;
 letter-spacing: 0.03em;
@@ -186,14 +200,14 @@ letter-spacing: 0.03em;
 
 /* Portfolio Section */
 
-.portfolio-section h2 {
+.portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.portfolio-section p {
+.portfolio-text {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
